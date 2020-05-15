@@ -1,0 +1,181 @@
+html{
+	font-family: arial;
+	height: 100%;
+}
+body{
+	font-family: arial;
+	min-height: 100%;
+	margin: 0;
+	padding:0;
+	position: relative;
+	background-color: #FDFAE1;
+}
+a:link{
+	text-decoration: none;
+}
+
+#lelogo{
+  position: absolute;
+  left: 5%;
+  border: 2px solid black;
+  /*margin-bottom: 1px;*/
+}
+
+#hautpage{
+	width: 100%;
+	padding: 1px;
+	background-color:#F9E430;
+	height: 100%;
+	font-weight: bold;
+	font-family: Georgia, serif;
+}
+#hautpage p{
+	text-align: center;
+	animation: flipInX 2.5s;
+}
+#tab{
+	word-spacing: 5px;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+@keyframes mymove
+{
+  	0%   {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+#table{
+  font-family: Georgia, serif;
+}
+
+#message{
+  margin-top:-1.5%;
+  margin-left:70%;
+}
+
+#seconnecter{
+  margin-top:-2%;
+  margin-left:75%;
+}
+
+#formrecherche{
+  font-family: Georgia, serif;
+  position: absolute;
+  left:40%;
+  bottom: 37%;
+  padding: 1%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+#btnlogout{
+  margin-top:-3%;
+  margin-left:75%;
+}
+
+#letabres{
+	border:2px solid black;
+  font-family: Georgia, serif;
+  border-collapse: collapse;
+}
+
+#letablog{
+  font-family: Georgia, serif;
+  border:2px solid black;
+  position: absolute;
+  left:44%;
+  bottom: 55%;
+  padding: 1%;
+}
+
+#letabactions
+{
+  font-family: Georgia, serif;
+}
+
+#letabajout{
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+  border-collapse: collapse;
+}
+
+#letabaccueil{
+  position: absolute;
+  left: 38%;
+  bottom: 35%;
+}
+
+#letabconsulter{
+  border: 2px solid black;
+    position: absolute;
+}
+
+#btnajout{
+  position: absolute;
+  left:46%;
+  bottom: 26%;
+}
+
+#boutonform{
+  left: 58%;
+  position: relative;
+}
+
+footer{
+  bottom: 0;
+  width: 100%;
+  background: #FFD700;
+  font-size: 12px;
+  text-align: center;
+  padding: 7px;
+  font-family: Georgia, serif;
+  position: absolute;
+}
